@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <style>
+    body{
+      background-color: lightyellow;
+      transition: all 1s;
+      height: 2000px;
+      margin: 0;
+    }
+    .bgcolor--blue{
+      background-color: lightblue;
+    }
+    .bgcolor--gray{
+      background-color: lightgray;
+    }
+    .btns{
+      position: relative;
+      top:60px;
+      width:600px;
+      margin: auto;
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .bg--img{
+      background: url('bgimg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      width: 100vw;
+      position: absolute;
+      opacity: 0;
+    }
+    .bg__img--show{
+      opacity: 1;
+    }
+    .btns{
+      position: fixed;
+      padding: 10px;
+      background-color: transparent;
+      transition: 0.3s;
+    }
+    .btns.bgshow{
+      background-color: skyblue;
+    }
+   /* #top_btn{
+      position: fixed;
+      bottom: 9%;
+      right: 6%;
+      opacity: 0;
+    }
+    #top_btn.visible{
+      opacity: 1;
+    }*/
+    .arrow_up.visible {
+      opacity: 1;
+    }
+    .arrow_up {
+      position: fixed;
+      bottom: 50px;
+      right: 50px;
+      width: 70px;
+      height: 70px;
+      background: none;
+      border: none;
+      text-align: center;
+      opacity: 0;
+    }
+    section{
+      width: 100%;
+      text-align: center;
+    }
+    .wrapper{
+      max-width: 1200px;
+      margin: auto;
+    }
+    #home{
+      padding-top: 88px;
+      text-align: center;
+    }
+    h1{
+      color: powderblue;
+      font-size: 48px;
+      margin-top: 100px;
+    }
+    h2{
+      font-size: 32px;
+    }
+    h3{
+      font-size: 24px;
+      font-weight: 300;
+    }
+    button{
+      border: none;
+      background-color:lightgray;
+      padding: 10px 30px;
+    }
+
+    #go-top {
+  display: none;
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  z-index: 9999;
+  color: #3d53cc; /* 색상변경*/
+}
+
+
+
+  </style>
+</head>
+<body>
+  
+  <div class="bg--img"></div>
+  <div class="btns">
+    <div class="container">
+      <div class="btns_menu">
+        <button class="btn_toggle">HOME</button>
+        <button class="btn--reset">ABOUT</button>
+        <button class="btn--bggray">SKILLS</button>
+        <button class="btn--bgimg">WORKS</button>
+        <button class="btn--contact">CONTACT</button>
+        
+      </div>
+    </div>
+  </div>
+  
+  <button id="go-top"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor"
+    class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+    <path fill-rule="evenodd"
+      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+  </svg></button>
+
+  <section id="home">
+    <div class="wrapper">
+      <h1>home</h1>
+      <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+      <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In harum, velit dolore maiores sapiente quis optio hic illum. Dolorem consequuntur placeat harum. Inventore, error! Est dolores atque fugiat aliquid corrupti.</h3>
+    </div>
+  </section>
+  <section id="about">
+    <div class="wrapper">
+      <h1>about</h1>
+      <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+      <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In harum, velit dolore maiores sapiente quis optio hic illum. Dolorem consequuntur placeat harum. Inventore, error! Est dolores atque fugiat aliquid corrupti.</h3>
+    </div>
+  </section>
+  <section id="skills">
+    <div class="wrapper">
+      <h1>skills</h1>
+      <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+      <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In harum, velit dolore maiores sapiente quis optio hic illum. Dolorem consequuntur placeat harum. Inventore, error! Est dolores atque fugiat aliquid corrupti.</h3>
+    </div>
+  </section>
+  <section id="works">
+    <div class="wrapper">
+      <h1>works</h1>
+      <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+      <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In harum, velit dolore maiores sapiente quis optio hic illum. Dolorem consequuntur placeat harum. Inventore, error! Est dolores atque fugiat aliquid corrupti.</h3>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="wrapper">
+      <h1>contact me</h1>
+      <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+      <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In harum, velit dolore maiores sapiente quis optio hic illum. Dolorem consequuntur placeat harum. Inventore, error! Est dolores atque fugiat aliquid corrupti.</h3>
+    </div>
+  </section>
+  
+  <script>
+    const bgContainer = document.querySelector('.bg--img');
+    const btnToggle = document.querySelector('.btn_toggle');
+    btnToggle.addEventListener('click', function() {
+      bgContainer.classList.remove('bg__img--show');
+      document.body.classList.toggle('bgcolor--blue');
+      //console.log('버튼클릭');
+      home.scrollIntoView({behavior:"smooth", block:"center"});
+    });
+
+    
+
+
+    const btnResrt = document.querySelector('.btn--reset');
+    const about = document.querySelector('#about');
+    btnResrt.addEventListener('click', function () {
+      document.body.classList.remove('bgcolor--blue', 'bgcolor--gray',
+      'bg--img');
+      bgContainer.classList.remove('bg__img--show');
+      about.scrollIntoView({behavior:"smooth", block:"center"});
+        });
+
+    const btnBgGray = document.querySelector('.btn--bggray');
+    const skills = document.querySelector('#skills');
+    btnBgGray.addEventListener('click', function(){
+      bgContainer.classList.remove('bg__img--show');
+      document.body.classList.add('bgcolor--gray');
+      skills.scrollIntoView({behavior:"smooth", block:"center"});
+    });
+
+
+    const btnBgImg = document.querySelector('.btn--bgimg');
+    const works = document.querySelector('#works');
+    btnBgImg.addEventListener('click', function(){
+      bgContainer.classList.add('bg__img--show');
+      works.scrollIntoView({behavior:"smooth", block:"center"});
+    });
+
+    const btncon = document.querySelector('.btn--contact');
+    const contact = document.querySelector('#contact');
+    btncon.addEventListener('click', function(){
+      contact.scrollIntoView({behavior:"smooth", block:"center"});
+    });
+
+
+    const navContainer = document.querySelector('.btns')
+    document.addEventListener('scroll', function(){
+      if (window.scrollY > 100){
+        navContainer.classList.add('bgshow');
+      }else{
+        navContainer.classList.remove('bgshow');
+      }
+    });
+
+    var backToTop = () => {
+  // Scroll | button show/hide
+  window.addEventListener('scroll', () => {
+    if (document.querySelector('html').scrollTop > 500) {
+      document.getElementById('go-top').style.display = "block";
+    } else {
+      document.getElementById('go-top').style.display = "none";
+    }
+  });
+  // back to top
+  document.getElementById('go-top').addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  })
+};
+backToTop();
+
+    
+      
+
+
+  </script>
+
+</body>
+</html>
